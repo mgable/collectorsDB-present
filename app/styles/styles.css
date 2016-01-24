@@ -1,0 +1,47 @@
+.whatsitworth {
+  /* overwrite kendo's css */ }
+  .whatsitworth .header {
+    border-bottom: 0 none; }
+  .whatsitworth .title {
+    display: inline-block;
+    padding: 15px 0 0 0;
+    font-size: 24px; }
+  .whatsitworth .navbar-brand.logo {
+    padding: 5px 15px; }
+  .whatsitworth .btn:focus, .whatsitworth .btn:active:focus {
+    outline: none; }
+  .whatsitworth button:visited, .whatsitworth button:hover {
+    text-decoration: none; }
+  .whatsitworth .sub-head {
+    text-transform: uppercase;
+    color: darkgray;
+    font-size: 12px;
+    margin: 0 0 10px; }
+  .whatsitworth .highlight {
+    background-color: green;
+    color: white; }
+  .whatsitworth .k-widget input.form-control {
+    height: 100%;
+    background-color: transparent; }
+  .whatsitworth .k-widget.k-autocomplete.form-control {
+    float: none;
+    width: 244px;
+    box-sizing: initial;
+    display: block;
+    float: none;
+    background-color: transparent; }
+  .whatsitworth .k-state-active, .whatsitworth .k-state-active:hover {
+    background-color: initial !important; }
+  .whatsitworth .slider-holder {
+    margin: 0 0 10px; }
+  .whatsitworth .description {
+    line-height: 18px;
+    margin: 0 0 5px 0; }
+  .whatsitworth .meta .category {
+    padding: 0 15px 0 0; }
+    .whatsitworth .meta .category span {
+      font-weight: bold; }
+  .whatsitworth .carousel-indicators {
+    bottom: -70px; }
+
+/*# sourceMappingURL=styles.css.map */
