@@ -347,8 +347,10 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'views/{,*/}*.html',
-            'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'images/{,*/}*.*',
+            'styles/fonts/{,*/}*.*',
+            'styles/external/{,*/}*.*',
+            'scripts/external/{,*/}*.js'
           ]
         }, {
           expand: true,
@@ -379,9 +381,9 @@ module.exports = function (grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles',
-        'imagemin',
-        'svgmin'
+        'copy:styles'//,
+        // 'imagemin',
+        // 'svgmin'
       ]
     },
 
@@ -455,15 +457,15 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'useminPrepare',
     'sass',
+    'useminPrepare',
     'ngtemplates',
     'concurrent:dist',
     'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
+    //'cdnify',
     'cssmin',
     'uglify',
     'filerev',

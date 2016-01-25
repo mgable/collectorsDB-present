@@ -17,7 +17,7 @@ angular.module('whatsitworth', [
 	'ui.utils',
 	'kendo.directives'
 ])
-.config(function ($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/simple');
 
 	$stateProvider
@@ -34,4 +34,6 @@ angular.module('whatsitworth', [
 			templateUrl: 'views/simple.html',
 			controller: 'SimpleCtrl',
 		});
+
+	$locationProvider.html5Mode(true);
 });
